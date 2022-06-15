@@ -1,0 +1,57 @@
+{
+  "status": 200,
+  "message": "Success",
+  "data": {
+    "categories": [
+      {
+        "name": "Favorites",
+        "childs": [
+          {
+            "name": "Inbox"
+          },
+          {
+            "name": "Sent items"
+          }
+        ]
+      },
+      {
+        "name": "Waifus",
+        "childs": [
+          {
+            "name": "Inbox"
+          }
+        ,
+          {
+            "name": "Sent items"
+          },
+          {
+            "name": "Draft"
+          }
+        ]
+      }
+    ],
+    "mails": [
+      {
+        "subject": "luv luv",
+        "shortContent": "I am here",
+        "userName": "Fox@gmail.com",
+        "category": "Tamamo",
+        "child": "Inbox"
+      },
+      {
+        "subject": "Can we...",
+        "shortContent": "I have finished cleaning",
+        "userName": "blondecatto@gmail.com",
+        "category": "Maple",
+        "child": "Inbox"
+      },
+      {
+        "subject": "Uhm...",
+        "shortContent": "Am I a good girl?",
+        "userName": "unihealer@gmail.com",
+        "category": "Unicorn",
+        "child": "Inbox"
+      }
+    ]
+  }
+}
