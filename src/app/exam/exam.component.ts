@@ -19,5 +19,4 @@ export class ExamComponent {
     this.weatherService.examAngular().subscribe(value => {this.data =value})
   }
 
-
 }

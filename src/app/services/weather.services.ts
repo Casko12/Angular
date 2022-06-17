@@ -29,7 +29,7 @@ export class WeatherServices {
     var parameters = new HttpParams();
     parameters = parameters.append('q', cityCode);
     parameters = parameters.append('appid', WeatherServices.APPID);
-    parameters = parameters.append('units', 'metric');
+    parameters = parameters.append('units', 'metric' );
     return this.httpClient.get<any>(WeatherServices.BASE_URL + "forecast",
       {
         params: parameters
