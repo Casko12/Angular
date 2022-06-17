@@ -12,7 +12,7 @@ import {FormsModule} from "@angular/forms";
 import {RouterModule, Routes} from "@angular/router";
 import { AssignmentComponent } from './assignment/assignment.component';
 import { Assignment2Component } from './assignment2/assignment2.component';
-import { ExamComponent } from './exam/exam.component';
+import { ExamComponent } from './exam/exam.component' ;
 
 const appRoutes: Routes = [
   {path: 'lop-hoc', component:ClassComponent
