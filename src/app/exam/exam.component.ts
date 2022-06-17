@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {examAngular} from "../interface/examAngular";
 import {WeatherServices} from "../services/weather.services";
 
 @Component({
@@ -6,11 +7,17 @@ import {WeatherServices} from "../services/weather.services";
   templateUrl: './exam.component.html',
   styleUrls: ['./exam.component.css']
 })
-export class ExamComponent implements OnInit {
+export class ExamComponent {
+  //@ts-ignore
+  data: examAngular = null;
+  constructor(private weatherService: WeatherServices) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit(){
+    this.getData();
   }
+  getData(){
+    this.weatherService.examAngular().subscribe(value => {this.data =value})
+  }
+
 
 }
