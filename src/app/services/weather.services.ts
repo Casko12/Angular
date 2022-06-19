@@ -2,6 +2,7 @@ import {HttpClient, HttpParams} from "@angular/common/http";
 import {IWeather} from "../interface/weather.interface";
 import {Injectable} from "@angular/core";
 import {ICategory, IDataJSON} from "../interface/category.interface";
+import {asgn2} from "../interface/assignment2.interface";
 import {examAngular} from "../interface/examAngular";
 
 @Injectable({
@@ -38,6 +39,9 @@ export class WeatherServices {
 
   mailList() {
     return this.httpClient.get<IDataJSON>('http://localhost:4200/assets/data.json');
+  }
+  asgn2(){
+    return this.httpClient.get<asgn2>('http://localhost:4200/assets/assignment2.json')
   }
 
   examAngular() {
